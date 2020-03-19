@@ -2,6 +2,14 @@
   "version": 8,
   "name": "Geolonia Basic",
   "sources": {
+    "gsi-japan": {
+      "type": "vector",
+      "tiles": [
+        "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
+      ],
+      "attribution": "<a href=\"https://www.gsi.go.jp/\">GSI Japan</a>",
+      "maxzoom": 15
+    },
     "geolonia": {
       "type": "vector",
       "url": "https://api.geolonia.com/v1/sources?key=YOUR-API-KEY"
@@ -3199,16 +3207,55 @@
       }
     },
     {
+      "id": "building-casing",
+      "type": "line",
+      "source": "gsi-japan",
+      "source-layer": "building",
+      "minzoom": 15,
+      "paint": {
+        "line-color": "#cccccc",
+        "line-width": 3
+      }
+    },
+    {
+      "id": "building-osm-casing",
+      "type": "line",
+      "source": "geolonia",
+      "source-layer": "building",
+      "minzoom": 15,
+      "paint": {
+        "line-color": "#cccccc",
+        "line-width": 3
+      }
+    },
+    {
       "id": "building",
+      "type": "fill",
+      "source": "gsi-japan",
+      "source-layer": "building",
+      "minzoom": 15,
+      "paint": {
+        "fill-color": "#f5f5f5",
+        "fill-outline-color": "transparent",
+        "fill-antialias": true
+      },
+      "layout": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "id": "building-osm",
       "type": "fill",
       "source": "geolonia",
       "source-layer": "building",
       "minzoom": 15,
       "paint": {
-        "fill-opacity": 0.6,
-        "fill-color": "rgba(225, 225, 225, 1)",
-        "fill-outline-color": "#ffffff",
+        "fill-color": "#f5f5f5",
+        "fill-outline-color": "transparent",
         "fill-antialias": true
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
