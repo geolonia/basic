@@ -3214,7 +3214,7 @@
       "source-layer": "building",
       "minzoom": 15,
       "paint": {
-        "line-color": "#cccccc",
+        "line-color": "#eeeeee",
         "line-width": 3
       }
     },
@@ -3225,7 +3225,7 @@
       "source-layer": "building",
       "minzoom": 15,
       "paint": {
-        "line-color": "#cccccc",
+        "line-color": "#eeeeee",
         "line-width": 3
       }
     },
@@ -3236,7 +3236,7 @@
       "source-layer": "building",
       "minzoom": 15,
       "paint": {
-        "fill-color": "#f5f5f5",
+        "fill-color": "#f7f7f7",
         "fill-outline-color": "transparent",
         "fill-antialias": true
       },
@@ -3259,7 +3259,7 @@
       "source-layer": "building",
       "minzoom": 15,
       "paint": {
-        "fill-color": "#f5f5f5",
+        "fill-color": "#f7f7f7",
         "fill-outline-color": "transparent",
         "fill-antialias": true
       },
