@@ -3242,7 +3242,15 @@
       },
       "layout": {
         "visibility": "visible"
-      }
+      },
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ]
     },
     {
       "id": "building-osm",
