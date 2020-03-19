@@ -8,7 +8,8 @@
         "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
       ],
       "attribution": "<a href=\"https://www.gsi.go.jp/\">GSI Japan</a>",
-      "maxzoom": 15
+      "maxzoom": 15,
+      "minzoom": 14
     },
     "geolonia": {
       "type": "vector",
